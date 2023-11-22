@@ -1,0 +1,19 @@
+﻿@model EmployeeViewModelcs
+@{
+    ViewData["Title"] = "Update";
+}
+
+<h3>Update The Employee </h3>
+
+<form asp-action="Update" enctype="multipart/form-data">
+
+    <partial name="PartialView/_CreateEditView" model="@Model" />
+
+    <input type="Submit" class="btn btn-primary">
+    <a asp-action="Index" class="btn btn-light">Back</a>
+
+</form>
+
+@section ValidationScriptSection{
+    <partial name="_ValidationScriptsPartial" />
+}

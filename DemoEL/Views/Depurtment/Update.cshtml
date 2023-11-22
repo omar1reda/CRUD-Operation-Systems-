@@ -1,0 +1,20 @@
+﻿@model DepurtmentViewModelcs
+@{
+    ViewData["Title"] = "Update";
+}
+
+<h3>Update The Depurtment </h3>
+
+<form asp-action="Update">
+
+
+    <partial name="PartialView/_CreateEditPartial" />
+
+    <input type="Submit" class="btn btn-primary">
+    <a asp-action="Index" class="btn btn-light">Back</a>
+
+</form>
+
+@section ValidationScriptSection{
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,14 @@
+﻿@model EmployeeViewModelcs
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h3>Details @Model.Name</h3>
+
+
+
+<partial name="PartialView/_DeleteDitalsePartaial" />
+
+<a asp-action="Update" asp-route-id="@Model.Id" class="btn btn-danger">Edit</a>
+<a asp-action="Index" class="btn btn-light">Cancel</a>
+

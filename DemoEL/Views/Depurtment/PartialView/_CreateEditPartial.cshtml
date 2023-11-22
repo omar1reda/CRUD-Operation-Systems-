@@ -1,0 +1,18 @@
+﻿@model DepurtmentViewModelcs
+<div class="mb-3">
+    <label for="disabledTextInput" class="form-label">Name</label>
+    <input asp-for="Name" id="Name" class="form-control" placeholder="Disabled input">
+    <span class="text-danger" asp-validation-for="Name"></span>
+</div>
+
+<div class="mb-3">
+    <label for="disabledTextInput" class="form-label">Code</label>
+    <input asp-for="Code" id="Code" class="form-control" placeholder="Disabled input">
+    <span class="text-danger" asp-validation-for="Code"></span>
+</div>
+
+<div class="mb-3">
+    <label for="disabledTextInput" class="form-label">DataOfCarantion</label>
+    <input asp-for="DataOfCarantion" id="DataOfCarantion" class="form-control">
+    <span class="text-danger" asp-validation-for="DataOfCarantion"></span>
+</div>

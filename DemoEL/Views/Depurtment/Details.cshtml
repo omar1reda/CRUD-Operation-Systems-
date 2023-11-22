@@ -1,0 +1,12 @@
+﻿@model DepurtmentViewModelcs
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h3>Details => @Model.Name</h3>
+
+
+<partial name="PartialView/_DeleteDitalsePartial" />
+
+    <a asp-action="Update" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
+    <a asp-action="Index" class="btn btn-light">Back</a>

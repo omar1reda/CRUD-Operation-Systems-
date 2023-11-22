@@ -1,0 +1,24 @@
+﻿@model RoleViewModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h4>Add Role</h4>
+<br />
+
+<form asp-action="Create" enctype="multipart/form-data">
+
+    <div class="mb-3">
+        <label for="disabledTextInput" class="form-label">Name</label>
+        <input asp-for="Name" class="form-control" placeholder="Disabled input">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+
+    <input type="Submit" value="Create" class="btn btn-primary">
+    <a asp-action="Index" class="btn btn-light">Back</a>
+
+</form>
+
+

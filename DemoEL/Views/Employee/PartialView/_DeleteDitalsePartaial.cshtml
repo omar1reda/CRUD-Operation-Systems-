@@ -1,0 +1,57 @@
+﻿@model EmployeeViewModelcs
+
+<div class="mb-3">
+    <img src="~/Files/Image/@Model.ImageName" class="rounded" height="40" width="40" />
+    <input asp-for="ImageName" hidden class="form-control" placeholder="Disabled input">
+
+</div>
+
+<div class="mb-3">
+    <label for="disabledTextInput" class="form-label">Name</label>
+    <input asp-for="Name" readonly class="form-control" placeholder="Disabled input">
+
+</div>
+
+<div class="mb-3">
+    <label for="disabledTextInput" class="form-label">Age</label>
+    <input asp-for="Age" readonly class="form-control" placeholder="Disabled input">
+
+</div>
+
+<div class="mb-3">
+    <label for="disabledTextInput" class="form-label">Address</label>
+    <input asp-for="Address" readonly class="form-control" placeholder="Disabled input">
+
+</div>
+
+<div class="mb-3">
+    <label for="disabledTextInput" class="form-label">Salary</label>
+    <input asp-for="Salary" readonly class="form-control" placeholder="Disabled input">
+
+</div>
+
+<div class="mb-3">
+    <label for="disabledTextInput" class="form-label">Email</label>
+    <input asp-for="Email" readonly class="form-control" placeholder="Disabled input">
+
+</div>
+
+<div class="mb-3">
+    <label for="disabledTextInput" class="form-label">PhoneNumber</label>
+    <input asp-for="PhoneNumber" readonly class="form-control" placeholder="Disabled input">
+
+</div>
+
+<div class="mb-3">
+    <label for="disabledTextInput" class="form-label">HireData</label>
+    <input asp-for="HireData" readonly class="form-control" placeholder="Disabled input">
+
+</div>
+
+
+
+
+<div class="mb-3 form-check">
+    <input asp-for="IsActve" readonly type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+</div>

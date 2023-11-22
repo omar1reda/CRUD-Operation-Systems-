@@ -1,0 +1,71 @@
+﻿
+@model EmployeeViewModelcs
+
+@{
+    var depurtment = new SelectList(@ViewBag.Depurtments , "Id" ,"Name");
+}
+<div class="mb-3">
+    <label for="disabledTextInput" class="form-label">Name</label>
+    <input asp-for="Name" class="form-control" placeholder="Disabled input">
+    <span asp-validation-for="Name" class="text-danger"></span>
+</div>
+
+<div class="mb-3">
+    <label for="disabledTextInput" class="form-label">Image</label>
+    <input asp-for="Image" type="file" class="form-control" placeholder="Disabled input">
+    
+</div>
+
+<div class="mb-3">
+    <label for="disabledTextInput" class="form-label">Age</label>
+    <input asp-for="Age" class="form-control" placeholder="Disabled input">
+    <span asp-validation-for="Age" class="text-danger"></span>
+</div>
+
+<div class="mb-3">
+    <label for="disabledTextInput" class="form-label">Address</label>
+    <input asp-for="Address" class="form-control" placeholder="Disabled input">
+    <span asp-validation-for="Address" class="text-danger"></span>
+</div>
+
+<div class="mb-3">
+    <label for="disabledTextInput" class="form-label">Salary</label>
+    <input asp-for="Salary" class="form-control" placeholder="Disabled input">
+    <span asp-validation-for="Salary" class="text-danger"></span>
+
+</div>
+
+<div class="mb-3">
+    <label for="disabledTextInput" class="form-label">Email</label>
+    <input asp-for="Email" class="form-control" placeholder="Disabled input">
+    <span class="text-danger"></span>
+</div>
+
+<div class="mb-3">
+    <label for="disabledTextInput" class="form-label">PhoneNumber</label>
+    <input asp-for="PhoneNumber" class="form-control" placeholder="Disabled input">
+    <span class="text-danger"></span>
+</div>
+
+
+<div class="mb-3 form-group">
+    <label for="disabledTextInput" class="form-label">Depurtment</label>
+    <select asp-for="DepurtmentId" class="form-control" asp-items="@depurtment">
+        <option value="null">--------- Select Depurtment ---------</option>
+    </select>
+</div>
+
+
+<div class="mb-3">
+    <label for="disabledTextInput" class="form-label">HireData</label>
+    <input asp-for="HireData" class="form-control" placeholder="Disabled input">
+    <span asp-validation-for="HireData" class="text-danger"></span>
+</div>
+
+
+
+
+<div class="mb-3 form-check">
+    <input asp-for="IsActve" type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+</div>

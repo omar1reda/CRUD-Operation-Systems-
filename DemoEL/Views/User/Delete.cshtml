@@ -1,0 +1,38 @@
+﻿@model UserViewModel
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form asp-action="Delete" enctype="multipart/form-data">
+
+
+    <div class="mb-3">
+        <label for="disabledTextInput" class="form-label">Id</label>
+        <input asp-for="Id" readonly class="form-control" placeholder="Disabled input">
+
+    </div>
+
+    <div class="mb-3">
+        <label for="disabledTextInput" class="form-label">Ferst Name</label>
+        <input asp-for="FName" readonly class="form-control" placeholder="Disabled input">
+
+    </div>
+
+    <div class="mb-3">
+        <label for="disabledTextInput" class="form-label">Last Name</label>
+        <input asp-for="LName" readonly class="form-control" placeholder="Disabled input">
+
+    </div>
+
+    <div class="mb-3">
+        <label for="disabledTextInput" class="form-label">Email</label>
+        <input asp-for="Email" readonly class="form-control" placeholder="Disabled input">
+
+    </div>
+
+    <button type="Submit" class="btn btn-danger">Delete</button>
+    <a asp-action="Index" class="btn btn-light">Cancel</a>
+
+</form>
+
